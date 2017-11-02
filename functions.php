@@ -608,6 +608,12 @@ function candidate_register_required_plugins() {
 }
 
 /*
+ * Load ACF Plugin
+ */
+ define( 'ACF_LITE', true );
+ include_once( get_template_directory() . '/lib/plugins/advanced-custom-fields/acf.php'); '
+
+/*
  * ACF Export Personal Information
  */
  if(function_exists("register_field_group"))
